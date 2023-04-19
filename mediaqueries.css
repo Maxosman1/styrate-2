@@ -1,0 +1,6 @@
+@media (min-width: 40em) {
+  .cta {
+    grid-template-columns: repeat(2, minmax(15rem, 15rem));
+    gap: 1.6rem;
+  }
+}

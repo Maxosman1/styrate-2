@@ -1,193 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
     <title>styrate</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="" alt="logo" class="logo">
-        <div>
-            <ul>
-                <li><a href="#">Sign in</a></li>
-                <li><a href="#">Sign up →</a></li>
-            </ul>
-        </div>
+      <img src="./Images/btctradeim.svg" alt="logo" class="logo" />
+      <div>
+        <ul>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Sign up →</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-        <!-- HERO SECTION -->
-        <section class="section" id="hero">
-            <h1>Welcome to Styrate Authentic <span>Reviews</span></h1>
-            <p class="secondary-heading">Discover the best products and make informed decisions with Styrate, the community-driven platform that provides honest and unbiased reviews from real users</p>
-            <button>
-                <p>Start free trial</p>
-            </button>
-            <button>
-                <p>Learn more</p>
-            </button>
-        </section>
+      <!-- HERO SECTION -->
+      <section class="section" id="hero">
+        <h1>Welcome to Styrate Authentic <span>Reviews</span></h1>
+        <p class="secondary-heading">
+          Discover the best products and make informed decisions with Styrate,
+          the community-driven platform that provides honest and unbiased
+          reviews from real users
+        </p>
 
-        <section>
-            <div>
-                <video src=""></video>
-                <div class="video-play">
-                    <img src="./Images/icons8-play-button-circled-50.png" alt="play-button" id="play-button">
-                    <p>Watch the full video (2 min)</p>
-                </div>
+        <div class="cta">
+          <button>
+            <p>Start free trial</p>
+          </button>
+          <button>
+            <p>Learn more</p>
+          </button>
+        </div>
+      </section>
+
+      <!-- VIDEO TUTORIAL -->
+      <section class="tutorial">
+        <div class="tutorial-container">
+          <video src=""></video>
+          <div class="video-play">
+            <img
+              src="./Images/icons8-play-button-circled-50.png"
+              alt="play-button"
+              id="play-button"
+            />
+            <p>Watch the full video (2 min)</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="revolution">
+          <h2>Revolutionalize Your Shopping Experience</h2>
+          <p class="secondary-heading">
+            Discover the ultimate platform for reliable product reviews and
+            personalized recommendations with Styrate.
+          </p>
+        </div>
+
+        <div class="engage">
+          <h2>Engage with the Community</h2>
+          <p class="secondary-heading">
+            Interact with other users, share coupons and discounts, and create
+            lists of products and reviews you love. Styrate creates a community
+            of engaged and passionate reviewers, making it easy to find
+            trustworthy reviews and recommendations.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature-card">
+            <div class="card-text">
+              <h3 class="feature-heading">AI-Powered Product Discovery</h3>
+              <p>
+                Using artificial intelligence, interact with other users, share
+                coupons and discounts, and create lists of products and reviews
+                you love. Styrate creates a community of engaged and passionate
+                reviewers, making it easy to find trustworthy reviews and
+                recommendations.
+              </p>
             </div>
-        </section>
+            <div class="card-icon">
+              <img
+                src="./Images/icons8-play-button-circled-50.png"
+                alt="test"
+              />
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="card-text">
+              <h3 class="feature-heading">Product Comparisons</h3>
+              <p>
+                A tool that allows users to compare multiple products
+                side-by-side, including specifications, features, and user
+                reviews.
+              </p>
+            </div>
+            <div class="card-icon">
+              <img
+                src="./Images/icons8-play-button-circled-50.png"
+                alt="test"
+              />
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="card-text">
+              <h3 class="feature-heading">Wishlist</h3>
+              <p>
+                A feature that allows users to create a shareable list of
+                products they want to buy in the future, with notifications when
+                those products go on sale.
+              </p>
+            </div>
+            <div class="card-icon">
+              <img
+                src="./Images/icons8-play-button-circled-50.png"
+                alt="test"
+              />
+            </div>
+          </div>
+          <img
+            src="./Images/styrate-user-x.png"
+            alt=""
+            class="sample-image"
+            width="100%"
+          />
+        </div>
+      </section>
 
-        <section>
-            <div class="revolution">
-                <h2>Revolutionalize Your Shopping Experience</h2>
-                <p class="secondary-heading">Discover the ultimate platform for reliable product reviews and personalized recommendations with Styrate.</p>
+      <section class="how-it-works">
+        <div>
+          <h2>How Styrate works</h2>
+          <p class="secondary-heading">
+            Discover and Review Products like Never Before with Styrate's
+            AI-Powered Social Platform
+          </p>
+        </div>
+
+        <div class="works-container">
+          <div class="works-card">
+            <img
+              src="./Images/icons8-play-button-circled-50.png"
+              alt=""
+              class="works-sample-image"
+            />
+            <h3>Finding products</h3>
+            <p>Browse multiple sources to find items you're interested in.</p>
+          </div>
+          <div class="works-card">
+            <img
+              src="./Images/icons8-play-button-circled-50.png"
+              alt=""
+              class="works-sample-image"
+            />
+            <h3>Following reviewers</h3>
+            <p>
+              Follow reviewers who have reviewd products you're interested in.
+            </p>
+          </div>
+          <div class="works-card">
+            <img
+              src="./Images/icons8-play-button-circled-50.png"
+              alt=""
+              class="works-sample-image"
+            />
+            <h3>Watch video reviews</h3>
+            <p>Watch video reviews directly on the Styrate platform.</p>
+          </div>
+          <div class="works-card">
+            <img
+              src="./Images/icons8-play-button-circled-50.png"
+              alt=""
+              class="works-sample-image"
+            />
+            <h3>Flag fake reviews</h3>
+            <p>Flag fake reviews for our team to review and remove.</p>
+          </div>
+          <div class="works-card">
+            <img
+              src="./Images/icons8-play-button-circled-50.png"
+              alt=""
+              class="works-sample-image"
+            />
+            <h3>Build a community</h3>
+            <p>
+              Build a community around product discovery and reviews by
+              following other users, engaging in discussions, and earning
+              rewards.
+            </p>
+          </div>
+          <div class="works-card">
+            <img
+              src="./Images/icons8-play-button-circled-50.png"
+              alt=""
+              class="works-sample-image"
+            />
+            <h3>Democratize the creator economy</h3>
+            <p>
+              Empower creators by giving them a platform to share their honest
+              reviews and recommendations, and connect with their followers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <h2>Pricing</h2>
+        <p class="secondary-heading">Choose the plan that's right for you.</p>
+
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <div class="price">
+              <h3>Free</h3>
+              <p>$0/month</p>
             </div>
 
-            <div class="engage">
-                <h2>Engage with the Community</h3>
-                <p class="secondary-heading">Interact with other users, share coupons and discounts, and create lists of products and reviews you love. Styrate creates a community of engaged and passionate reviewers, making it easy to find trustworthy reviews and recommendations.</p>
+            <div class="benefits">
+              <ul>
+                <li>Access to product reviews</li>
+                <li>Follow reviewers to get personalized recommendations</li>
+                <li>Interact with other users in the Styrate community</li>
+              </ul>
+            </div>
+            <button>Sign Up</button>
+          </div>
+
+          <div class="pricing-card">
+            <div class="price">
+              <h3>Pro</h3>
+              <p>$9.99/month</p>
             </div>
 
-            <div class="features">
-                <div class="feature-card">
-                    <div class="card-text">
-                        <h3 class="feature-heading">AI-Powered Product Discovery</h3>
-                        <p>Using artificial intelligence, interact with other users, share coupons and discounts, and create lists of products and reviews you love. Styrate creates a community of engaged and passionate reviewers, making it easy to find trustworthy reviews and recommendations.</p>
-                    </div>
-                    <div class="card-icon">
-                        <img src="./Images/icons8-play-button-circled-50.png" alt="test">
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="card-text">
-                        <h3 class="feature-heading">Product Comparisons</h3>
-                        <p>A tool that allows users to compare multiple products side-by-side, including specifications, features, and user reviews.</p>
-                    </div>
-                    <div class="card-icon">
-                        <img src="./Images/icons8-play-button-circled-50.png" alt="test">
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="card-text">
-                        <h3 class="feature-heading">Wishlist</h3>
-                        <p>A feature that allows users to create a shareable list of products they want to buy in the future, with notifications when those products go on sale.</p>
-                    </div>
-                    <div class="card-icon">
-                        <img src="./Images/icons8-play-button-circled-50.png" alt="test">
-                    </div>
-                </div>
-                <img src="" alt="" class="sample-image" width="100%" height="140px">
+            <div class="benefits">
+              <ul>
+                <li>All free features</li>
+                <li>Unlimited access to product reviews</li>
+                <li>
+                  Ability to create lists of favourite products and reviews
+                </li>
+                <li>Access to exclusive discounts and coupons</li>
+              </ul>
             </div>
-        </section>
+            <button>Sign Up</button>
+          </div>
 
-        <section class="how-it-works">
-            <div>
-                <h2>How Styrate works</h2>
-                <p class="secondary-heading">Discover and Review Products like Never Before with Styrate's AI-Powered Social Platform</p>
+          <div class="pricing-card">
+            <div class="price">
+              <h3>Business</h3>
+              <p>$30/month</p>
             </div>
 
-            <div class="works-container">
-                <div class="works-card">
-                    <img src="./Images/icons8-play-button-circled-50.png" alt="" class="works-sample-image">
-                    <h3>Finding products</h3>
-                    <p>Browse multiple sources to find items you're interested in.</p>
-                </div>
-                <div class="works-card">
-                    <img src="./Images/icons8-play-button-circled-50.png" alt="" class="works-sample-image">
-                    <h3>Following reviewers</h3>
-                    <p>Follow reviewers who have reviewd products you're interested in.</p>
-                </div>
-                <div class="works-card">
-                    <img src="./Images/icons8-play-button-circled-50.png" alt="" class="works-sample-image">
-                    <h3>Watch video reviews</h3>
-                    <p>Watch video reviews directly on the Styrate platform.</p>
-                </div>
-                <div class="works-card">
-                    <img src="./Images/icons8-play-button-circled-50.png" alt="" class="works-sample-image">
-                    <h3>Flag fake reviews</h3>
-                    <p>Flag fake reviews for our team to review and remove.</p>
-                </div>
-                <div class="works-card">
-                    <img src="./Images/icons8-play-button-circled-50.png" alt="" class="works-sample-image">
-                    <h3>Build a community</h3>
-                    <p>Build a community around product discovery and reviews by following other users, engaging in discussions, and earning rewards.</p>
-                </div>
-                <div class="works-card">
-                    <img src="./Images/icons8-play-button-circled-50.png" alt="" class="works-sample-image">
-                    <h3>Democratize the creator economy</h3>
-                    <p>Empower creators by giving them a platform to share their honest reviews and recommendations, and connect with their followers.</p>
-                </div>
-            </div>  
-        </section>
-
-        <section class="pricing">
-            <h2>Pricing</h2>
-            <p class="secondary-heading">Choose the plan that's right for you.</p>
-
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <div>
-                        <h3>Free</h3>
-                        <p>$0/month</p>
-                    </div>
-                    <ul>
-                        <li>Access to product reviews</li>
-                        <li>Follow reviewers to get personalized recommendations</li>
-                        <li>Interact with other users in the Styrate community</li>
-                    </ul>
-                    <button>Sign Up</button>
-                </div>
-
-                <div class="pricing-card">
-                    <div>
-                        <h3>Pro</h3>
-                        <p>$9.99/month</p>
-                    </div>
-                    <ul>
-                        <li>All free features</li>
-                        <li>Unlimited access to product reviews</li>
-                        <li>Ability to create lists of favourite products and reviews</li>
-                        <li>Access to exclusive discounts and coupons</li>
-                    </ul>
-                    <button>Sign Up</button>
-                </div>
-
-                <div class="pricing-card">
-                    <div>
-                        <h3>Business</h3>
-                        <p>$30/month</p>
-                    </div>
-                    <ul>
-                        <li>All Pro features</li>
-                        <li>Analytics to see which products are popular</li>
-                        <li>Ability to track user engagement with product reviews</li>
-                        <li>Premium customer support</li>
-                    </ul>
-                    <button>Sign Up</button>
-                </div>
+            <div class="benefits">
+              <ul>
+                <li>All Pro features</li>
+                <li>Analytics to see which products are popular</li>
+                <li>Ability to track user engagement with product reviews</li>
+                <li>Premium customer support</li>
+              </ul>
             </div>
-        </section>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-    Terms · Privacy Policy
+      <section>
+        <div class="footer-nav">
+          <div class="top">
+            <div class="footer-logo">
+              <div>
+                <img src="./Images/btctradeim.svg" alt="" class="logo" />
+              </div>
 
-    Company
+              <div class="footer-logo-text">
+                <span>Terms</span>
+                •
+                <span>Privacy Policy</span>
+              </div>
+            </div>
 
-    Home
-    About us
-    Company values
-    Pricing
+            <div class="">
+              <div class="company-quick-links">
+                <h3>Company</h3>
+                <ul>
+                  <li>Home</li>
+                  <li>About us</li>
+                  <li>Company values</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
 
-    your email
+              <div class="email-submission">
+                <input type="email" />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="bottom">
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <img src="./Images/btctradeim.svg" alt="" class="logo" />
+                </li>
+                <li>
+                  <img src="./Images/btctradeim.svg" alt="" class="logo" />
+                </li>
+                <li>
+                  <img src="./Images/btctradeim.svg" alt="" class="logo" />
+                </li>
+              </ul>
+            </div>
 
-    social icons
-
+            <p>All rights reserved.</p>
+          </div>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
