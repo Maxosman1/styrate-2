@@ -3,4 +3,26 @@
     grid-template-columns: repeat(2, minmax(15rem, 15rem));
     gap: 1.6rem;
   }
+
+  .company-email {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 48em) {
+  .pricing-cards {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+  }
+
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
