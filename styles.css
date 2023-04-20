@@ -38,9 +38,9 @@ a {
 }
 
 section {
-  max-width: 100%;
+  max-width: 1120px;
   padding: 0 1.6rem;
-  margin: 2.4rem 0;
+  margin: 4.8rem auto;
 }
 
 h1 {
@@ -48,6 +48,19 @@ h1 {
   font-weight: 800;
   margin-bottom: 2.4rem;
   text-align: center;
+}
+
+.authentic {
+  background: linear-gradient(
+    150deg,
+    rgba(102, 32, 255, 1) 0%,
+    rgba(208, 187, 255, 1) 28%,
+    rgba(251, 99, 99, 1) 50%,
+    rgba(255, 253, 118, 1) 75%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .secondary-heading {
@@ -77,16 +90,22 @@ h1 {
   border: unset;
 }
 
-#hero > button:nth-child(3) {
+#hero button:nth-child(1) {
   background-color: #4545fe;
 }
-#hero button:nth-child(4) {
+#hero button:nth-child(2) {
   background-color: #000;
+}
+
+.tutorial {
+  cursor: pointer;
 }
 
 .tutorial-container {
   position: relative;
   z-index: -1;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 video {
@@ -111,10 +130,17 @@ video {
   transform: translateX(-50%);
   z-index: 999;
   background-color: #fff;
+  gap: 8px;
+  min-width: 264px;
 }
 
 #play-button {
-  width: 2.4rem;
+  font-size: 2.4rem;
+  transition: 200ms ease-in;
+}
+
+.tutorial:hover #play-button {
+  color: #4545fe;
 }
 
 .video-play p {
@@ -137,18 +163,30 @@ h3 {
 
 .revolution h2,
 .engage h2 {
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.features {
+  display: grid;
+  gap: 2.4rem;
+  grid-template-columns: 1fr;
 }
 
 .feature-card {
   display: flex;
+  gap: 8px;
   border: 1px solid transparent;
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1.6rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2.4rem;
   line-height: 1.15;
+  justify-content: space-between;
+}
+
+.sample-image {
+  width: 100%;
 }
 
 .feature-heading {
@@ -159,18 +197,23 @@ h3 {
   font-size: 1.6rem;
 }
 
-.card-icon img {
-  width: 2.4rem;
+.card-icon ion-icon {
+  font-size: 16px;
 }
 
-.how-it-works h2,
+.how-it-works h2 {
+  margin-bottom: 0.8rem;
+}
+
 .how-it-works p {
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .works-container {
   display: grid;
-  gap: 1.6rem;
+  gap: 2.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
 }
 
 .works-card {
@@ -180,7 +223,7 @@ h3 {
   align-items: center;
   gap: 1rem;
   border: 1px solid transparent;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 1rem;
   border-radius: 0.4rem;
 }
@@ -194,16 +237,18 @@ h3 {
 }
 
 .pricing > h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .pricing > p {
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .pricing-cards {
   display: grid;
   gap: 1.6rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .pricing-card {
@@ -211,14 +256,14 @@ h3 {
   flex-direction: column;
   gap: 1rem;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
 }
 
 .price {
   padding: 1.6rem;
-  background-color: bisque;
+  background-color: #d3d3d3;
 }
 
 .pricing-card h3 {
@@ -229,7 +274,7 @@ h3 {
 .pricing-card p {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #666;
+  color: #fff;
 }
 
 .benefits {
@@ -249,9 +294,19 @@ h3 {
 .pricing-card > button {
   padding: 1.6rem;
   border: unset;
-  background-color: bisque;
+  background-color: #d3d3d3;
   font-size: 1.6rem;
   margin-top: auto;
+}
+
+div.pricing-card:nth-child(2) > div:nth-child(1),
+div.pricing-card:nth-child(2) > button:nth-child(3) {
+  background-color: #6366f1;
+}
+
+div.pricing-card:nth-child(3) > div:nth-child(1),
+div.pricing-card:nth-child(3) > button:nth-child(3) {
+  background-color: #eab308;
 }
 
 footer {
@@ -302,6 +357,8 @@ footer {
 
 input {
   width: 100%;
+  max-width: 360px;
+  min-width: 240px;
   height: 3.2rem;
 }
 

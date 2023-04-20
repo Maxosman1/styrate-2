@@ -10,6 +10,10 @@
 }
 
 @media (min-width: 48em) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .pricing-cards {
     grid-template-columns: repeat(3, minmax(auto, 1fr));
   }
