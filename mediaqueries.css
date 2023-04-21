@@ -10,6 +10,14 @@
 }
 
 @media (min-width: 48em) {
+  #hero {
+    margin: 16rem auto;
+  }
+
+  h1 {
+    font-size: 8.8rem;
+  }
+
   .features {
     grid-template-columns: 1fr 1fr;
   }

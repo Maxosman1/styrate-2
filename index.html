@@ -16,23 +16,22 @@
   </head>
   <body>
     <header>
-      <img
-        src="./Images/8fdfaa8c-802d-4139-94eb-e53815913ac2.png"
-        alt="logo"
-        class="logo"
-      />
-      <div>
-        <ul>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Sign up →</a></li>
-        </ul>
+      <div class="header-div">
+        <img src="./Media/btctradeim.svg" alt="logo" class="logo" />
+        <div>
+          <ul>
+            <li><a href="https://styrate.co/login">Sign in</a></li>
+            <li><a href="https://styrate.co/register">Sign up →</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- HERO SECTION -->
       <section class="section" id="hero">
         <h1>
-          Welcome to Styrate <span class="authentic">Authentic Reviews</span>
+          Welcome to Styrate<br />
+          <span class="authentic">Reviews you can Trust</span>
         </h1>
         <p class="secondary-heading">
           Discover the best products and make informed decisions with Styrate,
@@ -51,9 +50,14 @@
       </section>
 
       <!-- VIDEO TUTORIAL -->
-      <section class="tutorial">
+      <section class="tutorial" id="tutorial-section">
         <div class="tutorial-container">
-          <video src=""></video>
+          <video
+            controls
+            autoplay
+            muted
+            src="./Media/styrate-video.mp4"
+          ></video>
           <div class="video-play">
             <ion-icon name="play-circle-outline" id="play-button"></ion-icon>
             <p>Watch the full video (2 min)</p>
@@ -61,7 +65,8 @@
         </div>
       </section>
 
-      <section>
+      <!-- FEATURES -->
+      <section id="features-section">
         <div class="revolution">
           <h2>Revolutionalize Your Shopping Experience</h2>
           <p class="secondary-heading">
@@ -125,11 +130,12 @@
             </div>
           </div>
 
-          <img src="./Images/styrate-user-x.png" alt="" class="sample-image" />
+          <img src="./Media/styrate-user-x.png" alt="" class="sample-image" />
         </div>
       </section>
 
-      <section class="how-it-works">
+      <!-- HOW IT WORKS -->
+      <section class="how-it-works" id="how-it-works-section">
         <div>
           <h2>How Styrate works</h2>
           <p class="secondary-heading">
@@ -141,7 +147,7 @@
         <div class="works-container">
           <div class="works-card">
             <img
-              src="./Images/icons8-play-button-circled-50.png"
+              src="./Media/icons8-play-button-circled-50.png"
               alt=""
               class="works-sample-image"
             />
@@ -150,7 +156,7 @@
           </div>
           <div class="works-card">
             <img
-              src="./Images/icons8-play-button-circled-50.png"
+              src="./Media/icons8-play-button-circled-50.png"
               alt=""
               class="works-sample-image"
             />
@@ -161,7 +167,7 @@
           </div>
           <div class="works-card">
             <img
-              src="./Images/icons8-play-button-circled-50.png"
+              src="./Media/icons8-play-button-circled-50.png"
               alt=""
               class="works-sample-image"
             />
@@ -170,7 +176,7 @@
           </div>
           <div class="works-card">
             <img
-              src="./Images/icons8-play-button-circled-50.png"
+              src="./Media/icons8-play-button-circled-50.png"
               alt=""
               class="works-sample-image"
             />
@@ -179,7 +185,7 @@
           </div>
           <div class="works-card">
             <img
-              src="./Images/icons8-play-button-circled-50.png"
+              src="./Media/icons8-play-button-circled-50.png"
               alt=""
               class="works-sample-image"
             />
@@ -192,7 +198,7 @@
           </div>
           <div class="works-card">
             <img
-              src="./Images/icons8-play-button-circled-50.png"
+              src="./Media/icons8-play-button-circled-50.png"
               alt=""
               class="works-sample-image"
             />
@@ -205,7 +211,8 @@
         </div>
       </section>
 
-      <section class="pricing">
+      <!-- PRICING -->
+      <section class="pricing" id="pricing-section">
         <h2>Pricing</h2>
         <p class="secondary-heading">Choose the plan that's right for you.</p>
 
@@ -223,7 +230,9 @@
                 <li>Interact with other users in the Styrate community</li>
               </ul>
             </div>
-            <button class="pricing-btn">Sign Up</button>
+            <button class="pricing-btn">
+              <a class="sign-up-link" href="#">Sign Up</a>
+            </button>
           </div>
 
           <div class="pricing-card">
@@ -242,7 +251,7 @@
                 <li>Access to exclusive discounts and coupons</li>
               </ul>
             </div>
-            <button>Sign Up</button>
+            <button><a class="sign-up-link" href="#">Sign Up</a></button>
           </div>
 
           <div class="pricing-card">
@@ -259,7 +268,7 @@
                 <li>Premium customer support</li>
               </ul>
             </div>
-            <button>Sign Up</button>
+            <button><a class="sign-up-link" href="#">Sign Up</a></button>
           </div>
         </div>
       </section>
@@ -270,7 +279,7 @@
           <div class="top">
             <div class="footer-logo">
               <div>
-                <img src="./Images/btctradeim.svg" alt="" class="logo" />
+                <img src="./Media/btctradeim.svg" alt="" class="logo" />
               </div>
 
               <div class="footer-logo-text">
@@ -282,10 +291,20 @@
               <div class="company-quick-links">
                 <h3>Company</h3>
                 <ul>
-                  <li>Home</li>
-                  <li>About us</li>
-                  <li>Company values</li>
-                  <li>Pricing</li>
+                  <li>
+                    <a class="footer-link" href="#"> Home</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="#"> How Styrate works</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="#features-section">
+                      Features</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-link" href="#pricing-section"> Pricing</a>
+                  </li>
                 </ul>
               </div>
 
@@ -299,13 +318,19 @@
             <div class="social-icons">
               <ul>
                 <li>
-                  <ion-icon name="logo-twitter"></ion-icon>
+                  <a class="footer-link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
                 </li>
                 <li>
-                  <ion-icon name="logo-github"></ion-icon>
+                  <a class="footer-link" href="#">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
                 </li>
                 <li>
-                  <ion-icon name="logo-facebook"></ion-icon>
+                  <a class="footer-link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
                 </li>
               </ul>
             </div>
