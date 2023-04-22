@@ -1,6 +1,8 @@
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
+  const href = link.getAttribute("href");
+
   link.addEventListener("click", function (e) {
     if (
       href &&
@@ -14,7 +16,6 @@ allLinks.forEach(function (link) {
     }
 
     e.preventDefault();
-    const href = link.getAttribute("href");
 
     //Scroll back to top
     if (href === "#")
