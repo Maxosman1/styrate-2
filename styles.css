@@ -11,6 +11,7 @@ html {
   line-height: 1;
 }
 
+/* HEADER */
 header {
   background-color: rgba(255, 255, 255, 0.92);
   height: 6.4rem;
@@ -19,6 +20,7 @@ header {
   position: fixed;
   top: 0;
   transition: all 300ms ease-in;
+  z-index: 1001;
 }
 
 .header-div {
@@ -68,6 +70,7 @@ section {
   margin: 9.6rem auto;
 }
 
+/* HERO */
 h1 {
   font-size: 5.2rem;
   font-weight: 800;
@@ -139,6 +142,7 @@ h1 {
   background-color: #333;
 }
 
+/* TUTORIAL */
 .tutorial {
   cursor: pointer;
   position: relative;
@@ -202,6 +206,7 @@ h3 {
   font-size: 1.6rem;
 }
 
+/* FEATURES */
 .revolution,
 .engage {
   margin-bottom: 2.4rem;
@@ -247,6 +252,7 @@ h3 {
   font-size: 16px;
 }
 
+/* HOW IT WORKS */
 .how-it-works h2 {
   margin-bottom: 0.8rem;
 }
@@ -282,6 +288,7 @@ h3 {
   width: 3.2rem;
 }
 
+/* PRICING */
 .pricing > h2 {
   margin-bottom: 0.8rem;
 }
@@ -360,6 +367,7 @@ div.pricing-card:nth-child(3) > button:nth-child(3) {
   background-color: #eab308;
 }
 
+/* FOOTER */
 footer {
   font-size: 1.4rem;
 }
@@ -406,11 +414,35 @@ footer {
   margin: 1rem 0;
 }
 
-input {
-  width: 100%;
-  max-width: 360px;
-  min-width: 240px;
-  height: 3.2rem;
+form {
+  border: 1px solid #999;
+  border-radius: 4px;
+  max-width: fit-content;
+}
+
+.form-box input {
+  font-size: 14px;
+  color: #666;
+  padding: 8px 4px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.form-box button {
+  color: #666;
+  font-size: 14px;
+  border: none;
+  border-left: 2px solid #4545fe;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 0 8px;
+}
+
+.form-box button:hover,
+.form-box button:active {
+  color: #4545fe;
 }
 
 br {
